@@ -26,7 +26,9 @@ namespace oop_Lab5_GershA_c_
                 Console.WriteLine("0. Выход");
                 Console.Write("Введите ваш выбор: ");
 
-                choice = int.Parse(Console.ReadLine() ?? "0");
+                choice = InputUtils.InputNum(0, 6);
+
+                //int.Parse(Console.ReadLine() ?? "0");
 
                 switch (choice)
                 {
